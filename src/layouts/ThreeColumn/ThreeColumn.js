@@ -1,7 +1,16 @@
-import React from "react";
+import LeftBar from "./LeftBar";
+import RightBar from "./RightBar";
+import Main from "./Main";
+import "./threecolumn.css";
 
 const ThreeColumn = () => {
-  return <div>ThreeColumn</div>;
+  return (
+    <div className="threecolumn-container">
+      <LeftBar />
+      <Main />
+      <RightBar />
+    </div>
+  );
 };
 
 export default ThreeColumn;

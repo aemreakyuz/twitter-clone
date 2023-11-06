@@ -1,7 +1,15 @@
-import React from "react";
-
+import { Switch, Route } from "react-router-dom";
+import Feed from "../../pages/Feed";
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <div className="main-container">
+      <Switch>
+        <Route exact path="/feed">
+          <Feed />
+        </Route>
+      </Switch>
+    </div>
+  );
 };
 
 export default Main;
