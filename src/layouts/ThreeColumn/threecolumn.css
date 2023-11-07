@@ -1,6 +1,6 @@
 .threecolumn-container{
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: auto;
     min-height: 100vh;
 }
@@ -11,6 +11,7 @@
 /* LEFTBAR */
 .leftbar-container{
     width: 25%;
+    text-align: center;
 }
 
 
@@ -18,7 +19,7 @@
 /* MAIN */
 
 .main-container{
-    width: 50%;
+    width: 90%;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
     padding: 0 1rem;
@@ -31,4 +32,5 @@
 
 .rightbar-container{
     width: 25%;
+    text-align: center;
 }
