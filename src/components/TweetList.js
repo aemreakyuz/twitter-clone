@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Tweet from "./Tweet";
+import { useSelector } from "react-redux";
+
 function TweetList() {
-  const [tweets, setTweets] = useState([
-    { tweet: "lorem ipsum", user: { name: "Emre" } },
-    { tweet: "lorem ipsum 2", user: { name: "Ege" } },
-  ]);
+  const tweets = useSelector((store) => store.tweets);
 
   return (
     <div>
-      {tweets.map((tweet) => (
-        <Tweet tweet={tweet} />
+      {tweets.map((tweet, index) => (
+        <Tweet tweet={tweet} key={index} />
       ))}
     </div>
   );

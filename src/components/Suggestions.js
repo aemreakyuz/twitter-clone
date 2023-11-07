@@ -11,8 +11,8 @@ function Suggestions() {
 
   return (
     <div>
-      {suggestions.map((user) => (
-        <SuggestedUser user={user} />
+      {suggestions.map((user, index) => (
+        <SuggestedUser user={user} key={index} />
       ))}
     </div>
   );
